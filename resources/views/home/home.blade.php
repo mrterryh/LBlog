@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-	Hello world
+	<div class="container">
+		Hello world
+	</div>
 @stop

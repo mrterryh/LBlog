@@ -18,7 +18,10 @@
 		],
 		"psr-4": {
 			"LBlog\\": "app/"
-		}
+		},
+		"files": [
+			"bootstrap/functions.php"
+		]
 	},
 	"autoload-dev": {
 		"classmap": [
