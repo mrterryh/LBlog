@@ -12,7 +12,7 @@
 
 			<div class="col-md-4">
 				<div class="panel panel-default" id="update-checker">
-					<div class="panel-heading">Updates</div>
+					<div class="panel-heading">Update Checker</div>
 
 					<div class="panel-body text-center">
 						<i class="text-muted fa fa-spinner fa-spin fa-3x"></i>
