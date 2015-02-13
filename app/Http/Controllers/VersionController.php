@@ -3,6 +3,8 @@
 namespace LBlog\Http\Controllers;
 
 use Response;
+use Request;
+use App;
 
 class VersionController extends Controller
 {
@@ -12,6 +14,9 @@ class VersionController extends Controller
 	 */
 	public function index()
 	{
+		if (!Request::ajax())
+			return App::abort(404);
+
 		// Will eventually pull this dynamically from some
 		// sort of hosted source.
 		$latestVersion = '0.1.0';
