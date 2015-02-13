@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
 	</head>
 
-	<body>
+	<body id="backend">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">

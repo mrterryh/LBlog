@@ -11,14 +11,29 @@
 		<link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
 	</head>
 
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
+	<body id="frontend">
+		@if (Auth::check())
+			<div id="admin-bar">
+				<div class="container">
+					<ul class="pull-left">
+						<!-- <li><a href="#"><i class="fa fa-pencil"></i> Edit Post</a></li> -->
+						<li><a href="{{ URL::route('backend') }}"><i class="fa fa-cogs"></i> Backend</a></li>
+					</ul>
+
+					<ul class="pull-right">
+						<li><a href="{{ URL::route('backend.logout') }}"><i class="fa fa-sign-out"></i> Log out (<strong>{{ Auth::user()->name }}</strong>)</a></li>
+					</ul>
+				</div>
+			</div>
+		@endif
+
+		<nav class="navbar navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="{{ URL::route('home') }}">{{ Config::get('site.name') }}</a>
 				</div>
 
-				<ul class="nav navbar-nav nav-left">
+				<ul class="nav navbar-nav navbar-left">
 					<li{!! active('/') !!}><a href="{{ URL::route('home') }}"><i class="fa fa-globe"></i> Home</a></li>
 				</ul>
 			</div>

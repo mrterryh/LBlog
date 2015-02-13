@@ -1,4 +1,44 @@
-body {
+#admin-bar {
+	width: 100%;
+	height: 40px;
+	background: #555;
+}
+
+#admin-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#admin-bar ul li {
+	line-height: 36px;
+}
+
+#admin-bar ul li {
+	display: inline;
+}
+
+#admin-bar ul li a {
+	padding: 14px;
+	color: #999;
+}
+
+#admin-bar ul li a:hover {
+	text-decoration: none;
+	color: #666;
+	background: #ccc;
+}
+
+#admin-bar ul li.active a {
+	color: #666;
+	background: #ccc;
+}
+
+#admin-bar i {
+	margin-right: 5px;
+}
+
+body#backend {
 	padding-top: 70px;
 }
 
