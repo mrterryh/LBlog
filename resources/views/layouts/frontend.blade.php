@@ -23,8 +23,31 @@
 				</ul>
 			</div>
 		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					@yield('content')
+				</div>
 
-		@yield('content')
+				<div class="col-md-3">
+					<div class="panel panel-default widget" id="widget-recent-posts">
+						<div class="panel-heading">Recent Posts</div>
+						<div class="panel-body"></div>
+					</div>
+
+					<div class="panel panel-default widget" id="widget-tags">
+						<div class="panel-heading">Tag List</div>
+
+						<div class="panel-body">
+							@foreach ($tags as $tag)
+								<a href="#" class="label label-default">{{ $tag->name }}</a>
+							@endforeach
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<footer>
 			<div class="container">

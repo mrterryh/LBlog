@@ -10,3 +10,8 @@ footer {
 	font-size: 12px;
 	color: #999;
 }
+
+#widget-tags .panel-body {
+	line-height: 30px;
+	padding: 10px 15px 15px 15px;
+}

@@ -1,9 +1,12 @@
-<?php namespace LBlog\Providers;
+<?php
+
+namespace LBlog\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use View;
 
-class AppServiceProvider extends ServiceProvider {
-
+class AppServiceProvider extends ServiceProvider
+{
 	/**
 	 * Bootstrap any application services.
 	 *
@@ -11,7 +14,7 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//
+		View::composer('layouts.frontend', 'LBlog\Composers\FrontendComposer');
 	}
 
 	/**
