@@ -2,7 +2,7 @@
 
 namespace LBlog\Composers;
 
-use LBlog\Tag;
+use LBlog\Tag\Tag;
 
 class FrontendComposer
 {

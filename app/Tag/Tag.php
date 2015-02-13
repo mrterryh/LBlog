@@ -1,6 +1,6 @@
 <?php
 
-namespace LBlog;
+namespace LBlog\Tag;
 
 use Model;
 
