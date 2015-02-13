@@ -1,7 +1,7 @@
 <?php
 
 // Home route
-Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('/', ['as' => 'home', 'uses' => 'ArchiveController@index']);
 
 // Version checking
 Route::get('/version', 'VersionController@index');
@@ -16,7 +16,6 @@ Route::group(['prefix' => 'backend'], function() {
 
 	// Authentication
 	Route::get('/logout', ['as' => 'backend.logout', 'uses' => 'Backend\AuthController@index']);
-
 	Route::get('/login', ['as' => 'backend.login', 'uses' => 'Backend\AuthController@show']);
 	Route::post('/login', 'Backend\AuthController@create');
 });
