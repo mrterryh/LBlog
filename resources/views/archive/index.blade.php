@@ -12,6 +12,7 @@
 			@endif
 
 			<ul class="list-inline article-meta text-muted">
+				<li><i class="fa fa-clock-o"></i> {{ $article->created_at->diffForHumans() }}</li>
 				<li><i class="fa fa-user"></i> <a href="#">{{ $article->author->name }}</a></li>
 				<li><i class="fa fa-th-list"></i> <a href="#">{{ $article->category->name }}</a></li>
 
