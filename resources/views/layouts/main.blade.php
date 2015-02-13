@@ -2,7 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>{!! $title !!} | {{ Config::get('site.name') }}</title>
+		
 		<link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 		<link rel="stylesheet" href="{{ URL::asset('css/lblog.css') }}">
 		<link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
