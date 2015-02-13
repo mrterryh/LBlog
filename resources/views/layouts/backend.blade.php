@@ -48,5 +48,6 @@
 
 		<script src="{{ URL::asset('js/jquery-1.11.2.min.js') }}"></script>
 		<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+		@yield('scripts')
 	</body>
 </html>

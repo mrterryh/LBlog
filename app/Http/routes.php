@@ -3,6 +3,9 @@
 // Home route
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
+// Version checking
+Route::get('/version', 'VersionController@index');
+
 // Backend
 Route::group(['prefix' => 'backend'], function() {
 	// Authentication-required routes
