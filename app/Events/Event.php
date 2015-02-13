@@ -1,7 +1,8 @@
-<?php namespace LBlog\Events;
+<?php
 
-abstract class Event {
+namespace LBlog\Events;
 
-	//
+abstract class Event
+{
 
 }
