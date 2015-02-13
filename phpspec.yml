@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: LBlog
+        psr4_prefix: LBlog
+        src_path: app
