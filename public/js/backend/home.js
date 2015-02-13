@@ -7,6 +7,7 @@ function checkForUpdates() {
 	var updateCheckerBody = updateChecker.find('.panel-body');
 
 	$.get('/version', function(data) {
+		// If there is a new version of LBlog available...
 		if (data.newer) {
 			var content = '<p>There is a new version of LBlog available (<strong>' + data.latestVersion + '</strong>)</p>';
 			var content = content + '<p><a href="#">Click here for more information.</a></p>';
