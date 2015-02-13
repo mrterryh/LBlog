@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24c3946acc997e3f3eca7fc5c99585b2",
+    "hash": "679b7600448c1cfd3f61a906db317806",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -221,6 +221,65 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
+        },
+        {
+            "name": "graham-campbell/markdown",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Laravel-Markdown.git",
+                "reference": "315a7fe194492bf90c45370ed50744e9528212bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Markdown/zipball/315a7fe194492bf90c45370ed50744e9528212bb",
+                "reference": "315a7fe194492bf90c45370ed50744e9528212bb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.0.*",
+                "illuminate/support": "5.0.*",
+                "illuminate/view": "5.0.*",
+                "league/commonmark": "0.6.*",
+                "php": ">=5.4.7"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\Markdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@mineuk.com"
+                }
+            ],
+            "description": "Markdown Is A CommonMark Wrapper For Laravel 5",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Laravel Markdown",
+                "Laravel-Markdown",
+                "common mark",
+                "commonmark",
+                "framework",
+                "laravel",
+                "markdown"
+            ],
+            "time": "2015-02-05 19:38:06"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -532,6 +591,65 @@
                 "laravel"
             ],
             "time": "2015-02-11 20:37:48"
+        },
+        {
+            "name": "league/commonmark",
+            "version": "0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "ad1b89403026158529620e0f6096be0eae96817c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/ad1b89403026158529620e0f6096be0eae96817c",
+                "reference": "ad1b89403026158529620e0f6096be0eae96817c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.3"
+            },
+            "replace": {
+                "colinodell/commonmark-php": "*"
+            },
+            "require-dev": {
+                "erusev/parsedown": "~1.0",
+                "jgm/commonmark": "0.17",
+                "michelf/php-markdown": "~1.4",
+                "phpunit/phpunit": "~4.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "http://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Markdown parser for PHP based on the CommonMark spec",
+            "homepage": "https://github.com/thephpleague/commonmark",
+            "keywords": [
+                "commonmark",
+                "markdown",
+                "parser"
+            ],
+            "time": "2015-01-25 16:08:20"
         },
         {
             "name": "league/flysystem",

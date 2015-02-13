@@ -145,6 +145,11 @@ return [
 		'LBlog\Providers\EventServiceProvider',
 		'LBlog\Providers\RouteServiceProvider',
 
+		/*
+		 * Package Service providers
+		 */
+		'GrahamCampbell\Markdown\MarkdownServiceProvider'
+
 	],
 
 	/*
@@ -194,6 +199,10 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
+		/*
+		 * Package Facades
+		 */
+		'Markdown' => 'GrahamCampbell\Markdown\Facades\Markdown'
 	],
 
 ];
