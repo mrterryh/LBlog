@@ -10,6 +10,6 @@ class HomeController extends BackendController
 	 */
 	public function index()
 	{
-		
+		return view('backend.home.home')->withTitle('Dashboard');
 	}
 }
