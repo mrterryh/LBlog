@@ -6,7 +6,9 @@
 			<h1 class="article-title"><a href="#">{{ $article->title }}</a></h1>
 
 			@if ($article->featured_image)
-				
+				<div class="article-featured-image">
+					<a href="#"><img src="{{ $article->featuredImagePath() }}" alt="{{ $article->title }}"></a>
+				</div>
 			@endif
 
 			<ul class="list-inline article-meta text-muted">

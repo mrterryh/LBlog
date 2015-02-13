@@ -2,6 +2,7 @@
 
 namespace LBlog\Blog;
 
+use URL;
 use Model;
 use Markdown;
 use LBlog\Tag\TaggableTrait;
@@ -41,5 +42,14 @@ class Article extends Model
 	public function category()
 	{
 		return $this->belongsTo('LBlog\Blog\Category');
+	}
+
+	/**
+	 * Returns the full path to the article featured image.
+	 * @return string
+	 */
+	public function featuredImagePath()
+	{
+		return URL::asset('/uploads/' . $this->featured_image);
 	}
 }

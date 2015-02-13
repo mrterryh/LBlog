@@ -81,3 +81,13 @@ p {
 li i {
 	margin-right: 5px;
 }
+
+.article-featured-image img {
+	max-height: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.article-featured-image {
+	text-align: center;
+}
