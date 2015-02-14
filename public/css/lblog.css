@@ -98,3 +98,11 @@ li i {
 	margin: 0;
 	line-height: 30px;
 }
+
+.widearea-icons {
+	margin-right: 5px;
+}
+
+.widearea-overlayLayer {
+	font-family: 'Droid Serif', serif;
+}

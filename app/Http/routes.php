@@ -9,7 +9,7 @@ Route::bind('articleId', function($value) {
 Route::get('/', ['as' => 'home', 'uses' => 'Blog\ArchiveController@index']);
 
 // Blog archive routes
-Route::get('/archives', ['as' => 'archives', 'uses' => 'Blog\ArchiveController@index']);
+Route::get('/archives', ['as' => 'blog.archives', 'uses' => 'Blog\ArchiveController@index']);
 
 // Blog article routes
 Route::get('/article/{articleId}-{articleSlug}', ['as' => 'blog.article', 'uses' => 'Blog\ArticleController@show']);
@@ -23,6 +23,10 @@ Route::group(['prefix' => 'backend'], function() {
 	Route::group(['middleware' => 'auth'], function() {
 		// Main dashboard
 		Route::get('/', ['as' => 'backend', 'uses' => 'Backend\HomeController@index']);
+
+		// Backend articles
+		Route::get('/articles', ['as' => 'backend.blog.articles', 'uses' => 'Backend\ArticleController@index']);
+		Route::get('/articles/new', ['as' => 'backend.blog.articles.new', 'uses' => 'Backend\ArticleController@create']);
 	});
 
 	// Authentication

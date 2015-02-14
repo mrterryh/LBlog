@@ -25,7 +25,7 @@
 		{!! Markdown::convertToHtml($article->content) !!}
 	</p>
 
-	<a href="{{ URL::route('archives') }}" class="btn btn-default btn-sm">
+	<a href="{{ URL::route('blog.archives') }}" class="btn btn-default btn-sm">
 		&larr; Return to archives
 	</a>
 @stop

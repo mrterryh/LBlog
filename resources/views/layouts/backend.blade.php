@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 		<link rel="stylesheet" href="{{ URL::asset('css/lblog.css') }}">
 		<link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
+		@yield('styles')
 	</head>
 
 	<body id="backend">
@@ -20,11 +21,11 @@
 
 				<ul class="nav navbar-nav nav-left">
 					<li{!! active('backend') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-					<li{!! active('backend/users') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-users"></i> Users</a></li>
-					<li{!! active('backend/posts') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-file-text"></i> Posts</a></li>
-					<li{!! active('backend/comments') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-comments"></i> Comments</a></li>
-					<li{!! active('backend/tags') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-tag"></i> Tags</a></li>
-					<li{!! active('backend/settings') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-cogs"></i> Settings</a></li>
+					<li{!! active('backend/users*') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-users"></i> Users</a></li>
+					<li{!! active('backend/articles*') !!}><a href="{{ URL::route('backend.blog.articles') }}"><i class="fa fa-file-text"></i> Articles</a></li>
+					<li{!! active('backend/comments*') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-comments"></i> Comments</a></li>
+					<li{!! active('backend/tags*') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-tag"></i> Tags</a></li>
+					<li{!! active('backend/settings*') !!}><a href="{{ URL::route('backend') }}"><i class="fa fa-cogs"></i> Settings</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
