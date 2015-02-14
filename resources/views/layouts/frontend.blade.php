@@ -75,9 +75,13 @@
 			<div class="container">
 				<hr>
 
-				<p>
+				<p class="pull-left">
 					Copyright &copy; {{ date('Y') }}
 					<a href="{{ URL::route('home') }}">{{ Config::get('site.name') }}</a>
+				</p>
+
+				<p class="pull-right">
+					Powered by <a href="http://github.com/mrterryh/LBlog" target="_blank">LBlog</a>
 				</p>
 			</div>
 		</footer>
