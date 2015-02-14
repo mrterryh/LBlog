@@ -46,9 +46,16 @@
 				</div>
 
 				<div class="col-md-3">
-					<div class="panel panel-default widget" id="widget-recent-posts">
-						<div class="panel-heading">Recent Posts</div>
-						<div class="panel-body"></div>
+					<div class="panel panel-default widget" id="widget-recent-articles">
+						<div class="panel-heading">Recent Articles</div>
+
+						<div class="panel-body">
+							<ul>
+								@foreach ($recentArticles as $article)
+									<li><a href="#">{{ $article->title }}</a></li>
+								@endforeach
+							</ul>
+						</div>
 					</div>
 
 					<div class="panel panel-default widget" id="widget-tags">

@@ -14,7 +14,7 @@ class ArchiveController extends Controller
 	public function index()
 	{
 		$articleAttributes = ['tags', 'author', 'category'];
-		$articles = Article::with($articleAttributes)->paginate(5);
+		$articles = Article::orderBy('created_at', 'desc')->with($articleAttributes)->paginate(5);
 
 		return view('archive.index')
 			->withTitle('Archives')

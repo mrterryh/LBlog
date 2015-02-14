@@ -91,3 +91,10 @@ li i {
 .article-featured-image {
 	text-align: center;
 }
+
+#widget-recent-articles ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	line-height: 30px;
+}
