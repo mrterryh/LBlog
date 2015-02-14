@@ -3,11 +3,15 @@
 @section('content')
 	@foreach ($articles as $article)
 		<div class="article" id="article-{{ $article->id }}">
-			<h1 class="article-title"><a href="#">{{ $article->title }}</a></h1>
+			<h1 class="article-title">
+				<a href="{{ URL::route('blog.article', [$article->id, $article->slug]) }}">{{ $article->title }}</a>
+			</h1>
 
 			@if ($article->featured_image)
 				<div class="article-featured-image">
-					<a href="#"><img src="{{ $article->featuredImagePath() }}" alt="{{ $article->title }}"></a>
+					<a href="{{ URL::route('blog.article', [$article->id, $article->slug]) }}">
+						<img src="{{ $article->featuredImagePath() }}" alt="{{ $article->title }}">
+					</a>
 				</div>
 			@endif
 
@@ -31,7 +35,9 @@
 				{!! $article->excerptFormatted(600) !!}
 			</p>
 
-			<a href="#" class="btn btn-default btn-sm">Continue reading &rarr;</a>
+			<a href="{{ URL::route('blog.article', [$article->id, $article->slug]) }}" class="btn btn-default btn-sm">
+				Continue reading &rarr;
+			</a>
 		</div>
 	@endforeach
 @stop

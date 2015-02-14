@@ -1,7 +1,18 @@
 <?php
 
+// Route model binding
+Route::bind('articleId', function($value) {
+	return LBlog\Blog\Article::find($value);
+});
+
 // Home route
 Route::get('/', ['as' => 'home', 'uses' => 'Blog\ArchiveController@index']);
+
+// Blog archive routes
+Route::get('/archives', ['as' => 'archives', 'uses' => 'Blog\ArchiveController@index']);
+
+// Blog article routes
+Route::get('/article/{articleId}-{articleSlug}', ['as' => 'blog.article', 'uses' => 'Blog\ArticleController@show']);
 
 // Version checking
 Route::get('/version', 'VersionController@index');
