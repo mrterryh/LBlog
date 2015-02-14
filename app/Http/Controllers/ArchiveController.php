@@ -13,7 +13,8 @@ class ArchiveController extends Controller
 	 */
 	public function index()
 	{
-		$articles = Article::paginate(5);
+		$articleAttributes = ['tags', 'author', 'category'];
+		$articles = Article::with($articleAttributes)->paginate(5);
 
 		return view('archive.index')
 			->withTitle('Archives')
