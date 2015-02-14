@@ -1,8 +1,9 @@
 <?php
 
-namespace LBlog\Http\Controllers;
+namespace LBlog\Http\Controllers\Blog;
 
 use LBlog\Blog\Article;
+use LBlog\Http\Controllers\Controller;
 
 class ArchiveController extends Controller
 {

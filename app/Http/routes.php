@@ -1,7 +1,7 @@
 <?php
 
 // Home route
-Route::get('/', ['as' => 'home', 'uses' => 'ArchiveController@index']);
+Route::get('/', ['as' => 'home', 'uses' => 'Blog\ArchiveController@index']);
 
 // Version checking
 Route::get('/version', 'VersionController@index');
