@@ -1,4 +1,12 @@
 $(document).ready(function() {
+	Dropzone.autoDiscover = false;
+
+	var dropzone = new Dropzone('.dropzone');
+
+	dropzone.on('addedfile', function(file) {
+		console.log(file);
+	});
+
 	var titleInput = $('#input-title');
 	var slugInput = $('#input-slug');
 	var setSlugInput = true;

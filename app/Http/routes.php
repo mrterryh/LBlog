@@ -27,6 +27,9 @@ Route::group(['prefix' => 'backend'], function() {
 		// Backend articles
 		Route::get('/articles', ['as' => 'backend.blog.articles', 'uses' => 'Backend\ArticleController@index']);
 		Route::get('/articles/new', ['as' => 'backend.blog.articles.new', 'uses' => 'Backend\ArticleController@create']);
+
+		// File uploads
+		Route::post('/upload', ['as' => 'backend.upload', 'uses' => 'Backend\FileController@store']);
 	});
 
 	// Authentication

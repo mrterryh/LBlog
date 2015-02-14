@@ -106,3 +106,15 @@ li i {
 .widearea-overlayLayer {
 	font-family: 'Droid Serif', serif;
 }
+
+.dropzone {
+	border: 1px dashed rgb(99, 183, 219) !important;
+}
+
+.dropzone .dz-preview {
+	margin: 0 0 15px 0 !important;
+}
+
+.dropzone .dz-preview:last-child {
+	margin: 0 !important;
+}
